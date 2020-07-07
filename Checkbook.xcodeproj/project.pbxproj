@@ -16,6 +16,10 @@
 		B69EED2524B54008007E010A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69EED2324B54008007E010A /* LaunchScreen.storyboard */; };
 		B69EED3024B54008007E010A /* CheckbookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EED2F24B54008007E010A /* CheckbookTests.swift */; };
 		B69EED3B24B54008007E010A /* CheckbookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EED3A24B54008007E010A /* CheckbookUITests.swift */; };
+		B69EED4924B5402B007E010A /* Ledger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EED4824B5402B007E010A /* Ledger.swift */; };
+		B69EED4C24B542AD007E010A /* Tender.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EED4B24B542AD007E010A /* Tender.swift */; };
+		B69EED4E24B542C1007E010A /* ExpenseCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EED4D24B542C1007E010A /* ExpenseCategory.swift */; };
+		B69EED5024B542E2007E010A /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EED4F24B542E2007E010A /* Expense.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		B69EED3624B54008007E010A /* CheckbookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckbookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B69EED3A24B54008007E010A /* CheckbookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckbookUITests.swift; sourceTree = "<group>"; };
 		B69EED3C24B54008007E010A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B69EED4824B5402B007E010A /* Ledger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ledger.swift; sourceTree = "<group>"; };
+		B69EED4B24B542AD007E010A /* Tender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tender.swift; sourceTree = "<group>"; };
+		B69EED4D24B542C1007E010A /* ExpenseCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCategory.swift; sourceTree = "<group>"; };
+		B69EED4F24B542E2007E010A /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +117,7 @@
 				B69EED2624B54008007E010A /* Info.plist */,
 				B69EED1924B54007007E010A /* Checkbook.xcdatamodeld */,
 				B69EED2024B54008007E010A /* Preview Content */,
+				B69EED4A24B542A1007E010A /* Model */,
 			);
 			path = Checkbook;
 			sourceTree = "<group>";
@@ -137,6 +146,17 @@
 				B69EED3C24B54008007E010A /* Info.plist */,
 			);
 			path = CheckbookUITests;
+			sourceTree = "<group>";
+		};
+		B69EED4A24B542A1007E010A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B69EED4824B5402B007E010A /* Ledger.swift */,
+				B69EED4B24B542AD007E010A /* Tender.swift */,
+				B69EED4D24B542C1007E010A /* ExpenseCategory.swift */,
+				B69EED4F24B542E2007E010A /* Expense.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,10 +289,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B69EED5024B542E2007E010A /* Expense.swift in Sources */,
 				B69EED1624B54007007E010A /* AppDelegate.swift in Sources */,
 				B69EED1824B54007007E010A /* SceneDelegate.swift in Sources */,
+				B69EED4924B5402B007E010A /* Ledger.swift in Sources */,
+				B69EED4C24B542AD007E010A /* Tender.swift in Sources */,
 				B69EED1D24B54007007E010A /* ContentView.swift in Sources */,
 				B69EED1B24B54007007E010A /* Checkbook.xcdatamodeld in Sources */,
+				B69EED4E24B542C1007E010A /* ExpenseCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
