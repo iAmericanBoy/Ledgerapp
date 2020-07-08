@@ -10,12 +10,11 @@
 		B69EED1624B54007007E010A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EED1524B54007007E010A /* AppDelegate.swift */; };
 		B69EED1824B54007007E010A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EED1724B54007007E010A /* SceneDelegate.swift */; };
 		B69EED1B24B54007007E010A /* Checkbook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B69EED1924B54007007E010A /* Checkbook.xcdatamodeld */; };
-		B69EED1D24B54007007E010A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EED1C24B54007007E010A /* ContentView.swift */; };
+		B69EED1D24B54007007E010A /* ExpenseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EED1C24B54007007E010A /* ExpenseList.swift */; };
 		B69EED1F24B54008007E010A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B69EED1E24B54008007E010A /* Assets.xcassets */; };
 		B69EED2224B54008007E010A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B69EED2124B54008007E010A /* Preview Assets.xcassets */; };
 		B69EED2524B54008007E010A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69EED2324B54008007E010A /* LaunchScreen.storyboard */; };
 		B69EED3024B54008007E010A /* CheckbookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EED2F24B54008007E010A /* CheckbookTests.swift */; };
-		B69EED3B24B54008007E010A /* CheckbookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EED3A24B54008007E010A /* CheckbookUITests.swift */; };
 		B69EED4924B5402B007E010A /* Ledger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EED4824B5402B007E010A /* Ledger.swift */; };
 		B69EED4C24B542AD007E010A /* Tender.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EED4B24B542AD007E010A /* Tender.swift */; };
 		B69EED4E24B542C1007E010A /* ExpenseCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EED4D24B542C1007E010A /* ExpenseCategory.swift */; };
@@ -30,13 +29,6 @@
 			remoteGlobalIDString = B69EED1124B54007007E010A;
 			remoteInfo = Checkbook;
 		};
-		B69EED3724B54008007E010A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B69EED0A24B54007007E010A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B69EED1124B54007007E010A;
-			remoteInfo = Checkbook;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +36,7 @@
 		B69EED1524B54007007E010A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B69EED1724B54007007E010A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B69EED1A24B54007007E010A /* Checkbook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Checkbook.xcdatamodel; sourceTree = "<group>"; };
-		B69EED1C24B54007007E010A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B69EED1C24B54007007E010A /* ExpenseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseList.swift; sourceTree = "<group>"; };
 		B69EED1E24B54008007E010A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B69EED2124B54008007E010A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B69EED2424B54008007E010A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,9 +44,6 @@
 		B69EED2B24B54008007E010A /* CheckbookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckbookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B69EED2F24B54008007E010A /* CheckbookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckbookTests.swift; sourceTree = "<group>"; };
 		B69EED3124B54008007E010A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B69EED3624B54008007E010A /* CheckbookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckbookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B69EED3A24B54008007E010A /* CheckbookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckbookUITests.swift; sourceTree = "<group>"; };
-		B69EED3C24B54008007E010A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B69EED4824B5402B007E010A /* Ledger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ledger.swift; sourceTree = "<group>"; };
 		B69EED4B24B542AD007E010A /* Tender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tender.swift; sourceTree = "<group>"; };
 		B69EED4D24B542C1007E010A /* ExpenseCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCategory.swift; sourceTree = "<group>"; };
@@ -76,13 +65,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B69EED3324B54008007E010A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -91,7 +73,6 @@
 			children = (
 				B69EED1424B54007007E010A /* Checkbook */,
 				B69EED2E24B54008007E010A /* CheckbookTests */,
-				B69EED3924B54008007E010A /* CheckbookUITests */,
 				B69EED1324B54007007E010A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,7 +82,6 @@
 			children = (
 				B69EED1224B54007007E010A /* Checkbook.app */,
 				B69EED2B24B54008007E010A /* CheckbookTests.xctest */,
-				B69EED3624B54008007E010A /* CheckbookUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,12 +91,9 @@
 			children = (
 				B69EED1524B54007007E010A /* AppDelegate.swift */,
 				B69EED1724B54007007E010A /* SceneDelegate.swift */,
-				B69EED1C24B54007007E010A /* ContentView.swift */,
-				B69EED1E24B54008007E010A /* Assets.xcassets */,
-				B69EED2324B54008007E010A /* LaunchScreen.storyboard */,
-				B69EED2624B54008007E010A /* Info.plist */,
+				B69EED1C24B54007007E010A /* ExpenseList.swift */,
+				B69EED5124B543FA007E010A /* Resources */,
 				B69EED1924B54007007E010A /* Checkbook.xcdatamodeld */,
-				B69EED2024B54008007E010A /* Preview Content */,
 				B69EED4A24B542A1007E010A /* Model */,
 			);
 			path = Checkbook;
@@ -139,15 +116,6 @@
 			path = CheckbookTests;
 			sourceTree = "<group>";
 		};
-		B69EED3924B54008007E010A /* CheckbookUITests */ = {
-			isa = PBXGroup;
-			children = (
-				B69EED3A24B54008007E010A /* CheckbookUITests.swift */,
-				B69EED3C24B54008007E010A /* Info.plist */,
-			);
-			path = CheckbookUITests;
-			sourceTree = "<group>";
-		};
 		B69EED4A24B542A1007E010A /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +125,17 @@
 				B69EED4F24B542E2007E010A /* Expense.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B69EED5124B543FA007E010A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B69EED1E24B54008007E010A /* Assets.xcassets */,
+				B69EED2324B54008007E010A /* LaunchScreen.storyboard */,
+				B69EED2624B54008007E010A /* Info.plist */,
+				B69EED2024B54008007E010A /* Preview Content */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,24 +176,6 @@
 			productReference = B69EED2B24B54008007E010A /* CheckbookTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B69EED3524B54008007E010A /* CheckbookUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B69EED4524B54008007E010A /* Build configuration list for PBXNativeTarget "CheckbookUITests" */;
-			buildPhases = (
-				B69EED3224B54008007E010A /* Sources */,
-				B69EED3324B54008007E010A /* Frameworks */,
-				B69EED3424B54008007E010A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B69EED3824B54008007E010A /* PBXTargetDependency */,
-			);
-			name = CheckbookUITests;
-			productName = CheckbookUITests;
-			productReference = B69EED3624B54008007E010A /* CheckbookUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -228,10 +189,6 @@
 						CreatedOnToolsVersion = 12.0;
 					};
 					B69EED2A24B54008007E010A = {
-						CreatedOnToolsVersion = 12.0;
-						TestTargetID = B69EED1124B54007007E010A;
-					};
-					B69EED3524B54008007E010A = {
 						CreatedOnToolsVersion = 12.0;
 						TestTargetID = B69EED1124B54007007E010A;
 					};
@@ -252,7 +209,6 @@
 			targets = (
 				B69EED1124B54007007E010A /* Checkbook */,
 				B69EED2A24B54008007E010A /* CheckbookTests */,
-				B69EED3524B54008007E010A /* CheckbookUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -275,13 +231,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B69EED3424B54008007E010A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -294,7 +243,7 @@
 				B69EED1824B54007007E010A /* SceneDelegate.swift in Sources */,
 				B69EED4924B5402B007E010A /* Ledger.swift in Sources */,
 				B69EED4C24B542AD007E010A /* Tender.swift in Sources */,
-				B69EED1D24B54007007E010A /* ContentView.swift in Sources */,
+				B69EED1D24B54007007E010A /* ExpenseList.swift in Sources */,
 				B69EED1B24B54007007E010A /* Checkbook.xcdatamodeld in Sources */,
 				B69EED4E24B542C1007E010A /* ExpenseCategory.swift in Sources */,
 			);
@@ -308,14 +257,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B69EED3224B54008007E010A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B69EED3B24B54008007E010A /* CheckbookUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -323,11 +264,6 @@
 			isa = PBXTargetDependency;
 			target = B69EED1124B54007007E010A /* Checkbook */;
 			targetProxy = B69EED2C24B54008007E010A /* PBXContainerItemProxy */;
-		};
-		B69EED3824B54008007E010A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B69EED1124B54007007E010A /* Checkbook */;
-			targetProxy = B69EED3724B54008007E010A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -465,10 +401,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Checkbook/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Checkbook/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = J6B8ZX28ZW;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Checkbook/Info.plist;
+				INFOPLIST_FILE = Checkbook/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -486,10 +422,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Checkbook/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Checkbook/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = J6B8ZX28ZW;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Checkbook/Info.plist;
+				INFOPLIST_FILE = Checkbook/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -545,46 +481,6 @@
 			};
 			name = Release;
 		};
-		B69EED4624B54008007E010A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J6B8ZX28ZW;
-				INFOPLIST_FILE = CheckbookUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = oskman.CheckbookUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Checkbook;
-			};
-			name = Debug;
-		};
-		B69EED4724B54008007E010A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J6B8ZX28ZW;
-				INFOPLIST_FILE = CheckbookUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = oskman.CheckbookUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Checkbook;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -611,15 +507,6 @@
 			buildConfigurations = (
 				B69EED4324B54008007E010A /* Debug */,
 				B69EED4424B54008007E010A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B69EED4524B54008007E010A /* Build configuration list for PBXNativeTarget "CheckbookUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B69EED4624B54008007E010A /* Debug */,
-				B69EED4724B54008007E010A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
