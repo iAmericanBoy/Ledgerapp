@@ -32,7 +32,6 @@ struct ExpenseCell: View {
         }
         .padding(.horizontal, 10)
         .padding(.top,5)
-        .background(Color.blue.opacity(0.05))
         .border(Color.blue, width: 0.5)
     }
 }
