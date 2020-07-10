@@ -7,10 +7,11 @@
 
 import Foundation
 
-struct Expense {
-    var name: String
+struct Expense: Identifiable {
+    var id: UUID = UUID()
     var amount: Decimal
     var store: String
+    var cardType: Tender
     var category: ExpenseCategory
     var person: String
     var date: Date
