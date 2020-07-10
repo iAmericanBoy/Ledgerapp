@@ -13,7 +13,7 @@ struct ExpenseCell: View {
     var body: some View {
         VStack {
             HStack {
-                Text(expense.date.description)
+                Text(expense.date.formatted)
                 Spacer()
                 Text(expense.cardType.name).foregroundColor(Color.gray)
             }

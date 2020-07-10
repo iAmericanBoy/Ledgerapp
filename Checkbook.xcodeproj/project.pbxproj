@@ -22,6 +22,7 @@
 		B69EED5324B8F886007E010A /* ExpenseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EED5224B8F886007E010A /* ExpenseCell.swift */; };
 		B69EED5524B8FAFF007E010A /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EED5424B8FAFF007E010A /* Tag.swift */; };
 		B69EED5724B9180B007E010A /* ExpenseListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EED5624B9180B007E010A /* ExpenseListViewModel.swift */; };
+		B69EED5A24B91F29007E010A /* Date+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EED5924B91F29007E010A /* Date+Formatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		B69EED5224B8F886007E010A /* ExpenseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCell.swift; sourceTree = "<group>"; };
 		B69EED5424B8FAFF007E010A /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		B69EED5624B9180B007E010A /* ExpenseListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseListViewModel.swift; sourceTree = "<group>"; };
+		B69EED5924B91F29007E010A /* Date+Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatter.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,13 +99,11 @@
 			children = (
 				B69EED1524B54007007E010A /* AppDelegate.swift */,
 				B69EED1724B54007007E010A /* SceneDelegate.swift */,
-				B69EED1C24B54007007E010A /* ExpenseList.swift */,
-				B69EED5624B9180B007E010A /* ExpenseListViewModel.swift */,
-				B69EED5224B8F886007E010A /* ExpenseCell.swift */,
+				B69EED5B24B92013007E010A /* Views */,
 				B69EED5124B543FA007E010A /* Resources */,
 				B69EED1924B54007007E010A /* Checkbook.xcdatamodeld */,
 				B69EED4A24B542A1007E010A /* Model */,
-				B69EED5424B8FAFF007E010A /* Tag.swift */,
+				B69EED5924B91F29007E010A /* Date+Formatter.swift */,
 			);
 			path = Checkbook;
 			sourceTree = "<group>";
@@ -145,6 +145,25 @@
 				B69EED2024B54008007E010A /* Preview Content */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		B69EED5824B91F14007E010A /* Expenses */ = {
+			isa = PBXGroup;
+			children = (
+				B69EED1C24B54007007E010A /* ExpenseList.swift */,
+				B69EED5624B9180B007E010A /* ExpenseListViewModel.swift */,
+				B69EED5224B8F886007E010A /* ExpenseCell.swift */,
+			);
+			path = Expenses;
+			sourceTree = "<group>";
+		};
+		B69EED5B24B92013007E010A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B69EED5824B91F14007E010A /* Expenses */,
+				B69EED5424B8FAFF007E010A /* Tag.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +270,7 @@
 				B69EED1624B54007007E010A /* AppDelegate.swift in Sources */,
 				B69EED5524B8FAFF007E010A /* Tag.swift in Sources */,
 				B69EED1824B54007007E010A /* SceneDelegate.swift in Sources */,
+				B69EED5A24B91F29007E010A /* Date+Formatter.swift in Sources */,
 				B69EED4924B5402B007E010A /* Ledger.swift in Sources */,
 				B69EED4C24B542AD007E010A /* Tender.swift in Sources */,
 				B69EED5724B9180B007E010A /* ExpenseListViewModel.swift in Sources */,
