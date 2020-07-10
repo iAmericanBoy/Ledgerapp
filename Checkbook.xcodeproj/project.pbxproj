@@ -21,6 +21,7 @@
 		B69EED5024B542E2007E010A /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EED4F24B542E2007E010A /* Expense.swift */; };
 		B69EED5324B8F886007E010A /* ExpenseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EED5224B8F886007E010A /* ExpenseCell.swift */; };
 		B69EED5524B8FAFF007E010A /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EED5424B8FAFF007E010A /* Tag.swift */; };
+		B69EED5724B9180B007E010A /* ExpenseListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EED5624B9180B007E010A /* ExpenseListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		B69EED4F24B542E2007E010A /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		B69EED5224B8F886007E010A /* ExpenseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCell.swift; sourceTree = "<group>"; };
 		B69EED5424B8FAFF007E010A /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		B69EED5624B9180B007E010A /* ExpenseListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				B69EED1524B54007007E010A /* AppDelegate.swift */,
 				B69EED1724B54007007E010A /* SceneDelegate.swift */,
 				B69EED1C24B54007007E010A /* ExpenseList.swift */,
+				B69EED5624B9180B007E010A /* ExpenseListViewModel.swift */,
 				B69EED5224B8F886007E010A /* ExpenseCell.swift */,
 				B69EED5124B543FA007E010A /* Resources */,
 				B69EED1924B54007007E010A /* Checkbook.xcdatamodeld */,
@@ -250,6 +253,7 @@
 				B69EED1824B54007007E010A /* SceneDelegate.swift in Sources */,
 				B69EED4924B5402B007E010A /* Ledger.swift in Sources */,
 				B69EED4C24B542AD007E010A /* Tender.swift in Sources */,
+				B69EED5724B9180B007E010A /* ExpenseListViewModel.swift in Sources */,
 				B69EED1D24B54007007E010A /* ExpenseList.swift in Sources */,
 				B69EED1B24B54007007E010A /* Checkbook.xcdatamodeld in Sources */,
 				B69EED5324B8F886007E010A /* ExpenseCell.swift in Sources */,
