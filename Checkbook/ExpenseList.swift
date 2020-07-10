@@ -22,10 +22,12 @@ struct ExpenseList: View {
 }
 
 struct ExpenseList_Previews: PreviewProvider {
+
+    
     static var previews: some View {
-        Group {
-            let expense = Expense(amount: 69.69, store: "Trader Joes", cardType: Tender(name: "AMEX", image: nil), category: ExpenseCategory(name: "Grocerys"), person: "D", date: Date())
-            ExpenseList(expenses: [expense,expense,expense,expense])
-        }
+        ExpenseList(expenses: [Expense(amount: 69.69, store: "Trader Joes", cardType: Tender(name: "Gold", image: nil), category: ExpenseCategory(name: "Grocery"), person: "D", date: Date()),
+                               Expense(amount: 9.99, store: "iTunes", cardType: Tender(name: "Apple Card", image: nil), category: ExpenseCategory(name: "Media"), person: "E", date: Date()),
+                               Expense(amount: 129.99, store: "Liquor Store", cardType: Tender(name: "Reserved", image: nil), category: ExpenseCategory(name: "Vice"), person: "E", date: Date()),
+                               Expense(amount: 69.69, store: "Farmers market", cardType: Tender(name: "Cash", image: nil), category: ExpenseCategory(name: "Grocery"), person: "D", date: Date())])
     }
 }
