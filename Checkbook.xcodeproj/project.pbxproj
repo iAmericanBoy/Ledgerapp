@@ -20,6 +20,7 @@
 		B69EED4E24B542C1007E010A /* ExpenseCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EED4D24B542C1007E010A /* ExpenseCategory.swift */; };
 		B69EED5024B542E2007E010A /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EED4F24B542E2007E010A /* Expense.swift */; };
 		B69EED5324B8F886007E010A /* ExpenseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EED5224B8F886007E010A /* ExpenseCell.swift */; };
+		B69EED5524B8FAFF007E010A /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EED5424B8FAFF007E010A /* Tag.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		B69EED4D24B542C1007E010A /* ExpenseCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCategory.swift; sourceTree = "<group>"; };
 		B69EED4F24B542E2007E010A /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		B69EED5224B8F886007E010A /* ExpenseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCell.swift; sourceTree = "<group>"; };
+		B69EED5424B8FAFF007E010A /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				B69EED5124B543FA007E010A /* Resources */,
 				B69EED1924B54007007E010A /* Checkbook.xcdatamodeld */,
 				B69EED4A24B542A1007E010A /* Model */,
+				B69EED5424B8FAFF007E010A /* Tag.swift */,
 			);
 			path = Checkbook;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 			files = (
 				B69EED5024B542E2007E010A /* Expense.swift in Sources */,
 				B69EED1624B54007007E010A /* AppDelegate.swift in Sources */,
+				B69EED5524B8FAFF007E010A /* Tag.swift in Sources */,
 				B69EED1824B54007007E010A /* SceneDelegate.swift in Sources */,
 				B69EED4924B5402B007E010A /* Ledger.swift in Sources */,
 				B69EED4C24B542AD007E010A /* Tender.swift in Sources */,

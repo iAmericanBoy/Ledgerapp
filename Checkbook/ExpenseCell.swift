@@ -24,8 +24,9 @@ struct ExpenseCell: View {
                 Text("$ \(expense.amount.description)")
             }
             HStack {
-                Text(expense.person)
-                Text(expense.category.name)
+                Tag(text: expense.person, color: Color.gray.opacity(0.5))
+                Tag(text: expense.category.name, color: Color.orange.opacity(0.5))
+                Spacer()
             }
             .padding(.all, 5)
         }
@@ -41,5 +42,7 @@ struct ExpenseCell_Previews: PreviewProvider {
         ExpenseCell(expense: Expense(amount: 69.69, store: "Trader Joes", cardType: Tender(name: "AMEX", image: nil), category: ExpenseCategory(name: "Grocerys"), person: "D", date: Date()))
     }
 }
+
+
 
 
