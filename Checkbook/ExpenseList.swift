@@ -9,6 +9,26 @@ import SwiftUI
 
 struct ExpenseList: View {
     var body: some View {
+        ScrollView(.vertical, showsIndicators: true ) {
+            LazyVStack {
+                ForEach(0 ..< 100) { item in
+                    ExpenseCell()
+                }
+            }
+        }
+    }
+}
+
+struct ExpenseList_Previews: PreviewProvider {
+    static var previews: some View {
+        Group {
+            ExpenseList()
+        }
+    }
+}
+
+struct ExpenseCell: View {
+    var body: some View {
         VStack {
             HStack {
                 Text("07/10/2020")
@@ -26,19 +46,10 @@ struct ExpenseList: View {
                 Text("Grocery")
             }
             .padding(.all, 5)
-            
         }
         .padding(.horizontal, 10)
+        .padding(.top,5)
         .background(Color.blue.opacity(0.05))
-    }
-}
-
-struct ExpenseList_Previews: PreviewProvider {
-    static var previews: some View {
-        Group {
-            ExpenseList()
-        }
-            
-            
+        .border(Color.blue, width: 0.5)
     }
 }
