@@ -32,26 +32,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
-    // MARK: - Core Data stack
 
-    lazy var persistentContainer: NSPersistentCloudKitContainer = {
-        let container = NSPersistentCloudKitContainer(name: "Checkbook")
-        let storeURL = URL.storeURL(for: "group.oskman.ledger", databaseName: "Checkbook")
-        let storeDescription = NSPersistentStoreDescription(url: storeURL)
-        container.persistentStoreDescriptions = [storeDescription]
-        
-        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
-            if let error = error as NSError? {
-                fatalError("Unresolved error \(error), \(error.userInfo)")
-            }
-        })
-        return container
-    }()
 
     // MARK: - Core Data Saving support
 
     func saveContext () {
-        let context = persistentContainer.viewContext
+        let context = CoreDataStack.context
         if context.hasChanges {
             do {
                 try context.save()
