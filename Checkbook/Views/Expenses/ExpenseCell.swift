@@ -35,13 +35,13 @@ struct ExpenseCell: View {
         }
         .padding(.horizontal, 10)
         .padding(.top,5)
-        .border(Color.blue, width: 0.5)
     }
 }
 
 struct ExpenseCell_Previews: PreviewProvider {
     static var previews: some View {
         ExpenseCell(expense: Expense(amount: 69.69, store: "Trader Joes", cardType: Tender(name: "AMEX", image: nil), category: ExpenseCategory(name: "Grocery"), person: "D", date: Date()))
+            .previewLayout(.sizeThatFits)
     }
 }
 

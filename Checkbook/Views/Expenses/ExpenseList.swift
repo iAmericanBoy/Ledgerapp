@@ -11,13 +11,16 @@ struct ExpenseList: View {
     @ObservedObject var viewModel = ExpenseListViewModel()
     
     var body: some View {
-        ScrollView(.vertical, showsIndicators: true ) {
-            LazyVStack {
-                ForEach(viewModel.expenses) { (expenseItem) in
-                    ExpenseCell(expense: expenseItem)
-                }
+        List {
+            ForEach(viewModel.expenses) { (expenseItem) in
+                ExpenseCell(expense: expenseItem)
             }
+            .onDelete(perform: deleteRow(_ :))
         }
+    }
+    
+    private func deleteRow(_ indexSet:IndexSet) {
+        viewModel.delete(indexSet)
     }
 }
 

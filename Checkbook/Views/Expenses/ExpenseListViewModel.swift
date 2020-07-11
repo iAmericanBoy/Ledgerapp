@@ -22,6 +22,10 @@ class ExpenseListViewModel: ObservableObject {
         return model
     }
     
+    // MARK: Intents
+    func delete(_ offSets: IndexSet) {
+        model.remove(atOffsets: offSets)
+    }
     
     // MARK: Private functions
     private func createModel() {
