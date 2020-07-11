@@ -11,7 +11,7 @@ extension Date {
     var formatted: String {
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale.autoupdatingCurrent
-        dateFormatter.dateStyle = .short
+        dateFormatter.dateStyle = .medium
         return dateFormatter.string(from: self)
     }
 }

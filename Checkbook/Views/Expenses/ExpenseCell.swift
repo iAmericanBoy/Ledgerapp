@@ -14,18 +14,21 @@ struct ExpenseCell: View {
         VStack {
             HStack {
                 Text(expense.date.formatted)
+                    .font(.callout)
                 Spacer()
-                Text(expense.cardType.name).foregroundColor(Color.gray)
+                Text(expense.cardType.name).font(.footnote).foregroundColor(Color.gray)
             }
-            .padding(.bottom, 10)
             HStack {
                 Text(expense.store)
+                    .font(.title2)
                 Spacer()
                 Text("$ \(expense.amount.description)")
+                    .font(.title)
+                    
             }
             HStack {
-                Tag(text: expense.person, color: Color.gray.opacity(0.5))
-                Tag(text: expense.category.name, color: Color.orange.opacity(0.5))
+                Tag(text: expense.person, color: Color.gray.opacity(0.4))
+                Tag(text: expense.category.name, color: Color.orange.opacity(0.4))
                 Spacer()
             }
             .padding(.all, 5)
@@ -38,7 +41,7 @@ struct ExpenseCell: View {
 
 struct ExpenseCell_Previews: PreviewProvider {
     static var previews: some View {
-        ExpenseCell(expense: Expense(amount: 69.69, store: "Trader Joes", cardType: Tender(name: "AMEX", image: nil), category: ExpenseCategory(name: "Grocerys"), person: "D", date: Date()))
+        ExpenseCell(expense: Expense(amount: 69.69, store: "Trader Joes", cardType: Tender(name: "AMEX", image: nil), category: ExpenseCategory(name: "Grocery"), person: "D", date: Date()))
     }
 }
 
