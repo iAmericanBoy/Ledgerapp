@@ -5,20 +5,17 @@
 //  Created by Dominic Lanzillotta on 7/7/20.
 //
 
-import UIKit
 import SwiftUI
+import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-    
     var window: UIWindow?
-    
-    
-    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        
+
+    func scene(_ scene: UIScene, willConnectTo _: UISceneSession, options _: UIScene.ConnectionOptions) {
         let context = CoreDataStack.persistentContainer.viewContext
-        
+
         let contentView = Container()
-        
+
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
@@ -27,27 +24,30 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window.makeKeyAndVisible()
         }
     }
-    
-    func sceneDidDisconnect(_ scene: UIScene) {
-        
-    }
-    
-    func sceneDidBecomeActive(_ scene: UIScene) {
-        
-    }
-    
-    func sceneWillResignActive(_ scene: UIScene) {
-        
-    }
-    
-    func sceneWillEnterForeground(_ scene: UIScene) {
-        
-    }
-    
-    func sceneDidEnterBackground(_ scene: UIScene) {
-        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
-    }
-    
-    
-}
 
+    func sceneDidDisconnect(_: UIScene) {}
+
+    func sceneDidBecomeActive(_: UIScene) {}
+
+    func sceneWillResignActive(_: UIScene) {}
+
+    func sceneWillEnterForeground(_: UIScene) {}
+
+    func sceneDidEnterBackground(_: UIScene) {
+        saveContext()
+    }
+
+    // MARK: - Core Data Saving support
+
+    func saveContext() {
+        let context = CoreDataStack.context
+        if context.hasChanges {
+            do {
+                try context.save()
+            } catch {
+                let nserror = error as NSError
+                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+            }
+        }
+    }
+}

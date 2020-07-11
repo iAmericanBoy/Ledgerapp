@@ -13,4 +13,3 @@ struct Ledger {
     var categories: [ExpenseCategory]
     var expenses: [Expense]
 }
-

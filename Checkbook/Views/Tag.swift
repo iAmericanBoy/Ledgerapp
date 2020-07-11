@@ -10,9 +10,9 @@ import SwiftUI
 struct Tag: View {
     var text: String
     var color: Color
-    
+
     var body: some View {
-        ZStack(){
+        ZStack {
             Text(text)
                 .padding(.horizontal, 5)
                 .background(color)

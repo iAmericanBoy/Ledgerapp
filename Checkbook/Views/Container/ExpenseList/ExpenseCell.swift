@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ExpenseCell: View {
     var expense: Expense
-    
+
     var body: some View {
         VStack {
             HStack {
@@ -24,7 +24,6 @@ struct ExpenseCell: View {
                 Spacer()
                 Text("$ \(expense.amount.description)")
                     .font(.title)
-                    
             }
             HStack {
                 Tag(text: expense.person, color: Color.gray.opacity(0.4))
@@ -34,7 +33,7 @@ struct ExpenseCell: View {
             .padding(.all, 5)
         }
         .padding(.horizontal, 10)
-        .padding(.top,5)
+        .padding(.top, 5)
     }
 }
 
@@ -44,7 +43,3 @@ struct ExpenseCell_Previews: PreviewProvider {
             .previewLayout(.sizeThatFits)
     }
 }
-
-
-
-

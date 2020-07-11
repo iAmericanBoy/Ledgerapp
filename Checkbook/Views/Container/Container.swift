@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Container: View {
     @ObservedObject var viewModel = ContainerViewModel()
-    
+
     var body: some View {
         ExpenseList(expenses: $viewModel.expenses, delete: viewModel.delete(_:))
     }
