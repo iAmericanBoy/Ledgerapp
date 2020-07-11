@@ -24,6 +24,7 @@
 		B69EED5724B9180B007E010A /* ContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EED5624B9180B007E010A /* ContainerViewModel.swift */; };
 		B69EED5A24B91F29007E010A /* Date+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EED5924B91F29007E010A /* Date+Formatter.swift */; };
 		B69EED5F24BA5BFB007E010A /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EED5E24BA5BFB007E010A /* Container.swift */; };
+		B69EED6324BA7383007E010A /* URL+storeURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EED6224BA7383007E010A /* URL+storeURL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		B69EED5624B9180B007E010A /* ContainerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewModel.swift; sourceTree = "<group>"; };
 		B69EED5924B91F29007E010A /* Date+Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatter.swift"; sourceTree = "<group>"; };
 		B69EED5E24BA5BFB007E010A /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		B69EED6124BA71AA007E010A /* Checkbook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Checkbook.entitlements; sourceTree = "<group>"; };
+		B69EED6224BA7383007E010A /* URL+storeURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+storeURL.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,7 @@
 		B69EED1424B54007007E010A /* Checkbook */ = {
 			isa = PBXGroup;
 			children = (
+				B69EED6124BA71AA007E010A /* Checkbook.entitlements */,
 				B69EED1524B54007007E010A /* AppDelegate.swift */,
 				B69EED1724B54007007E010A /* SceneDelegate.swift */,
 				B69EED5B24B92013007E010A /* Views */,
@@ -106,6 +110,7 @@
 				B69EED1924B54007007E010A /* Checkbook.xcdatamodeld */,
 				B69EED4A24B542A1007E010A /* Model */,
 				B69EED5924B91F29007E010A /* Date+Formatter.swift */,
+				B69EED6224BA7383007E010A /* URL+storeURL.swift */,
 			);
 			path = Checkbook;
 			sourceTree = "<group>";
@@ -149,24 +154,32 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		B69EED5824B91F14007E010A /* Expenses */ = {
+		B69EED5824B91F14007E010A /* ExpenseList */ = {
 			isa = PBXGroup;
 			children = (
 				B69EED1C24B54007007E010A /* ExpenseList.swift */,
 				B69EED5224B8F886007E010A /* ExpenseCell.swift */,
 			);
-			path = Expenses;
+			path = ExpenseList;
 			sourceTree = "<group>";
 		};
 		B69EED5B24B92013007E010A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B69EED5824B91F14007E010A /* Expenses */,
+				B69EED6024BA60B5007E010A /* Container */,
 				B69EED5424B8FAFF007E010A /* Tag.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B69EED6024BA60B5007E010A /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				B69EED5824B91F14007E010A /* ExpenseList */,
 				B69EED5E24BA5BFB007E010A /* Container.swift */,
 				B69EED5624B9180B007E010A /* ContainerViewModel.swift */,
 			);
-			path = Views;
+			path = Container;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +291,7 @@
 				B69EED4C24B542AD007E010A /* Tender.swift in Sources */,
 				B69EED5724B9180B007E010A /* ContainerViewModel.swift in Sources */,
 				B69EED1D24B54007007E010A /* ExpenseList.swift in Sources */,
+				B69EED6324BA7383007E010A /* URL+storeURL.swift in Sources */,
 				B69EED1B24B54007007E010A /* Checkbook.xcdatamodeld in Sources */,
 				B69EED5F24BA5BFB007E010A /* Container.swift in Sources */,
 				B69EED5324B8F886007E010A /* ExpenseCell.swift in Sources */,
@@ -436,6 +450,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Checkbook/Checkbook.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Checkbook/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = J6B8ZX28ZW;
@@ -445,7 +460,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = oskman.Checkbook;
+				PRODUCT_BUNDLE_IDENTIFIER = oskman.Ledger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -457,6 +472,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Checkbook/Checkbook.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Checkbook/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = J6B8ZX28ZW;
@@ -466,7 +482,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = oskman.Checkbook;
+				PRODUCT_BUNDLE_IDENTIFIER = oskman.Ledger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

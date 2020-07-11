@@ -17,6 +17,6 @@ struct Container: View {
 
 struct Container_Previews: PreviewProvider {
     static var previews: some View {
-        Container()
+        Container(viewModel: ContainerViewModel())
     }
 }
