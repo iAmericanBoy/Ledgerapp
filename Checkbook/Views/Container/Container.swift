@@ -11,7 +11,10 @@ struct Container: View {
     @ObservedObject var viewModel = ContainerViewModel()
 
     var body: some View {
-        ExpenseList(expenses: $viewModel.expenses, delete: viewModel.delete(_:))
+        ZStack {
+            ExpenseList(expenses: $viewModel.expenses, delete: viewModel.delete(_:))
+            FloatingButton(onTap: viewModel.addExpense)
+        }
     }
 }
 

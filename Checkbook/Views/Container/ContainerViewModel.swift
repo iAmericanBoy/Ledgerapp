@@ -24,6 +24,10 @@ class ContainerViewModel: ObservableObject {
         expenses.remove(atOffsets: offSets)
     }
 
+    func addExpense() {
+        expenses.append(Expense(amount: 36.47, store: "Trader Joes", cardType: Tender(name: "Gold", image: nil), category: ExpenseCategory(name: "Grocery"), person: "D", date: Date()))
+    }
+
     // MARK: Private functions
 
     private func createModel() {

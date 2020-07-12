@@ -24,5 +24,6 @@ struct Tag: View {
 struct Tag_Previews: PreviewProvider {
     static var previews: some View {
         Tag(text: "GROCERY", color: .blue)
+            .previewLayout(.sizeThatFits)
     }
 }
