@@ -26,6 +26,7 @@
 		B69EED5F24BA5BFB007E010A /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EED5E24BA5BFB007E010A /* Container.swift */; };
 		B69EED6324BA7383007E010A /* URL+storeURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EED6224BA7383007E010A /* URL+storeURL.swift */; };
 		B69EED6524BA74F6007E010A /* CoredataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EED6424BA74F6007E010A /* CoredataStack.swift */; };
+		B69EED6724BA8970007E010A /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EED6624BA8970007E010A /* FloatingButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		B69EED6124BA71AA007E010A /* Checkbook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Checkbook.entitlements; sourceTree = "<group>"; };
 		B69EED6224BA7383007E010A /* URL+storeURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+storeURL.swift"; sourceTree = "<group>"; };
 		B69EED6424BA74F6007E010A /* CoredataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataStack.swift; sourceTree = "<group>"; };
+		B69EED6624BA8970007E010A /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +113,7 @@
 				B69EED5124B543FA007E010A /* Resources */,
 				B69EED1924B54007007E010A /* Checkbook.xcdatamodeld */,
 				B69EED6424BA74F6007E010A /* CoredataStack.swift */,
-				B69EED4A24B542A1007E010A /* Model */,
+				B69EED4A24B542A1007E010A /* DataModel */,
 				B69EED5924B91F29007E010A /* Date+Formatter.swift */,
 				B69EED6224BA7383007E010A /* URL+storeURL.swift */,
 			);
@@ -135,7 +137,7 @@
 			path = CheckbookTests;
 			sourceTree = "<group>";
 		};
-		B69EED4A24B542A1007E010A /* Model */ = {
+		B69EED4A24B542A1007E010A /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
 				B69EED4824B5402B007E010A /* Ledger.swift */,
@@ -143,7 +145,7 @@
 				B69EED4D24B542C1007E010A /* ExpenseCategory.swift */,
 				B69EED4F24B542E2007E010A /* Expense.swift */,
 			);
-			path = Model;
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 		B69EED5124B543FA007E010A /* Resources */ = {
@@ -171,6 +173,7 @@
 			children = (
 				B69EED6024BA60B5007E010A /* Container */,
 				B69EED5424B8FAFF007E010A /* Tag.swift */,
+				B69EED6624BA8970007E010A /* FloatingButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				B69EED6524BA74F6007E010A /* CoredataStack.swift in Sources */,
 				B69EED5524B8FAFF007E010A /* Tag.swift in Sources */,
 				B69EED1824B54007007E010A /* SceneDelegate.swift in Sources */,
+				B69EED6724BA8970007E010A /* FloatingButton.swift in Sources */,
 				B69EED5A24B91F29007E010A /* Date+Formatter.swift in Sources */,
 				B69EED4924B5402B007E010A /* Ledger.swift in Sources */,
 				B69EED4C24B542AD007E010A /* Tender.swift in Sources */,
