@@ -26,8 +26,8 @@ struct ExpenseCell: View {
                     .font(.title)
             }
             HStack {
-                Tag(text: expense.person, color: Color.gray.opacity(0.4))
-                Tag(text: expense.category.name, color: Color.orange.opacity(0.4))
+                Tag(text: expense.person, color: Color.purple.opacity(0.2))
+                Tag(text: expense.category.name, color: Color.purple.opacity(0.6))
                 Spacer()
             }
             .padding(.all, 5)
